@@ -1,0 +1,122 @@
+<!-- http://apps.eky.hk/css-triangle-generator/zh-hant -->
+
+<html>
+
+<head>
+    <title>css demo</title>
+
+    <style type="text/css">
+        table {
+            display: inline-block;
+            margin: 0 auto 40px;
+            border: 1px solid #000;
+            }
+            td {
+            height: 46px;
+            padding: 0 2px;
+            border-right: 1px solid #000;
+            }
+
+            tr td:last-child {
+            border-right: none;
+            }
+
+            .td-container {
+            position: relative;
+            width: 86px;
+            background: #000;
+            overflow: hidden;
+            }
+
+            .td-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 46px 0 0 88px;
+            border-color: transparent transparent transparent #fff;
+            }
+
+            .td-right {
+            position: absolute;
+            top: 0;
+            right:0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 88px 46px 0;
+            border-color: transparent #fff transparent transparent;
+            }
+
+            .kc {
+            color: #000;
+            z-index: 99;
+            background: #fff;
+            position: absolute;
+            left: 8px;
+            bottom: 4px;
+            font-size: 14px;
+            }
+
+            .fs {
+            color: #000;
+            z-index: 99;
+            background: #fff;
+            position: absolute;
+            right: 8px;
+            top: 4px;
+            font-size: 14px
+            }
+
+            .container {
+            position: relative;
+            margin: 0 auto;
+            width: 86px;
+            height: 47px;
+            background: #000;
+            border: 1px solid #000;
+            overflow:hidden;
+            }
+            .left {
+            position: absolute;
+            left:-1px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 47px 0 0 86px;
+            border-color: transparent transparent transparent #fff;
+            }
+            .right {
+            position: absolute;
+            right: -1px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 86px 47px 0;
+            border-color: transparent #fff transparent transparent;
+            }
+    </style>
+</head>
+
+<body>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="td-container">
+                <div class="td-left"></div>
+                <div class="td-right"></div>
+                <span class="kc">考场</span>
+                <span class="fs">分数</span>
+            </td>
+            <td>362330199012267518</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
